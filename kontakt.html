@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktformular</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!--Indsæt header og nav-->
+
+    <!--Kontaktformular / main -->
+    <main class="kontaktform">
+        <h1>Kontakt os</h1>
+        <p class="kontakt-tekst">Vi vender tilbage til dig indenfor 24 timer</p>
+
+        <form> <!--Felter til navn, email, tel-->
+            <label for="navn">Navn</label>
+            <input id="navn" type="text">
+
+            <label for="email">E-mail</label>
+            <input id="email" type="email">
+
+            <label for="tel">Telefon</label>
+            <input id="tel" type="tel">
+
+            <!--Checkbox til at være anonym-->
+            <fieldset>
+                <legend>Ønsker du at være anonym?</legend> <!--Overskrift ved brug af fieldset-->
+               
+                <input id="ja" type="radio" name="kontakt">
+                <label for="ja">Ja</label>
+                
+                <input id="nej" type="radio" name="kontakt">
+                <label for="nej">Nej</label>
+            </fieldset>
+
+            <!--Besked boks-->
+            <label for="besked">Har du en besked?</label>
+            <textarea  id="besked" cols="30" rows="10"></textarea>
+
+            <!--Hvordan vil du gerne kontaktes?-->
+            <fieldset>
+                <legend>Hvordan vil du gerne kontaktes?</legend> <!--Overskrift ved brug af fieldset-->
+               
+                <input id="tel" type="radio" name="kontakt">
+                <label for="tel">Telefon</label>
+                
+                <input id="mail" type="radio" name="kontakt">
+                <label for="mail">E-mail</label>
+            </fieldset>
+            
+        </form>
+
+    </main>
+    
+</body>
+</html>
