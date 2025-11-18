@@ -4,8 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/908313e932.js" crossorigin="anonymous"></script>
+    <script src="js/navigation.js" defer></script> <!--link til jave script tilføj defer for at fortælle siden den skal tage det til sidst-->
 </head>
+
 <body>
+    <header>
+        <nav>
+            <a href="forside.html"><img class="logo" src="img/logo.png" alt="logo af UNGiBALANCE"></a> <!--rundt logo-->
+            <img class="logo2" src="img/ungibalance lys.png" alt="Skrift logo"> <!--Skift logo UNGiBALANCE-->
+            <ul>
+                <li><a href="#">Diagnoser</a></li>
+                <li><a href="#">Personlige fortællinger</a></li>
+                <li><a href="#">Om os</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <button id="bars">  <!--Knap der kan trykkes på (kan ikke linke, der skal bruges a tag)-->
+            <i class="fa-solid fa-bars"></i> 
+        </button>
+    </header>
+
+    <main>
+        <section> <!--Første sektion-->
+            <h1>VELKOMMEN</h1>
+            <h3>Til Ung i Balance</h3>
+            <p>Mental sundhed er noget mange døjer med. Siden her er både til dig der har en diagnose eller oplever symptomer, men også til dig som er pårørende. Eller måske er du bare nysgerrig.</p>
+        </section>
+
+        <img class="raad" src="img/6 råd illu.png" alt="Illustration over 6 råd">
+
+        <section> <!--Personlige fortællinger blå boks-->
+            <h2>Personlige fortællinger</h2>
+            <p>Du er ikke alene. Her fortæller anonyme unge om hvordan de lever med psykiske udfordringer</p>
+
+            <div class="cards">
+                <div class="card">
+                    <h4>*Ann (24)</h4>
+                    <p>“Det nåede til et punkt hvor jeg ikke kunne stå op om morgenen. Alt føltes ligemeget, jeg kunne ikke gå i skole og jeg stoppede med at snakke med mine venner...”</p>
+                    <a href="#">Læs historien her</a>
+                </div>
+
+                <div class="card">
+                    <h4>*Chris (19)</h4>
+                    <p>“Det nåede til et punkt hvor jeg ikke kunne stå op om morgenen. Alt føltes ligemeget, jeg kunne ikke gå i skole og jeg stoppede med at snakke med mine venner...”</p>
+                    <a href="#">Læs historien her</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>FAKTA</h2>
+            <h3>Om psykisk sygdom blandt unge</h3>
+            <a href="#">Læs mere fakta her</a>
+        </section>
+
+        <img src="img/hjælpeværktøjer.png" alt="Hjælpeværktøjslinje">
+    </main>
+
+    <footer>
+        <img src="img/logo.png" alt="Logo i footer">
+
+        <div class="footer-info">
+            <p><i class="fa-solid fa-map-pin"></i>Højbyvej 44,
+            2300 København</p>
+            <p><i class="fa-solid fa-phone"></i>+45 1234 5678</p>
+            <p><i class="fa-solid fa-envelope"></i>ungi@balance.dk</p>
+        </div>
+
+    </footer>
     
 </body>
 </html>
