@@ -121,6 +121,7 @@ img{
 
 .card a:hover{
     transform: scale(1.1);
+    background-color: #fea584;
 }
 
 .card p {
@@ -145,6 +146,7 @@ img{
 }
 .fakta a:hover{
     transform: scale(1.1);
+    background-color: #fea584;
 }
 
 .fakta p {
@@ -173,6 +175,51 @@ img.vaerktoej-img {
 .footer-info{
     text-align: left;
     color: #ffffff;
+}
+
+/*Kontaktform*/
+.kontaktform {
+    border: 3px solid #2b4570;
+    border-radius: 5px;
+    padding: 1.3em;
+    width: 50%;
+    margin: 0 auto; /*Centrerer elementet på siden*/
+    margin-top: 20px;
+}
+
+input[type=text], input[type=email], input[type=tel], select, textarea{
+    width: 100%;
+    padding: 1em;
+    border: 2px solid #000000;
+    border-radius: 4px; /*runder kanterne*/
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+select, input[type=checkbox], input[type=radio], input[type=submit]{
+    cursor: pointer;
+}
+
+fieldset{
+    border-color: #7180ac;
+    margin-bottom: 0.8em;
+}
+
+input[type=checkbox]{
+    margin: 0.8em 0;
+}
+
+input[type=submit]{
+    background-color: #E49273;
+    padding: 0.8em 1.5em; /*dette gør knappen større, mere fylde 0.8top/bund 1.5 i siderne*/
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 18px;
+}
+
+input[type=submit]:hover{ /*tilføjer hover på knappen*/
+	background-color: #fea584; /*vælger slightly lysere farve*/
 }
 
 /*media queries*/

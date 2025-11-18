@@ -3,12 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontaktformular</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/908313e932.js" crossorigin="anonymous"></script>
+    <script src="js/navigation.js" defer></script> <!--link til jave script tilføj defer for at fortælle siden den skal tage det til sidst-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
 </head>
-<body>
 
-    <!--Indsæt header og nav-->
+<body>
+    <header>
+        <nav>
+            <a href="forside.html"><img class="logo" src="img/logo.png" alt="logo af UNGiBALANCE"></a> <!--rundt logo-->
+            <a href="forside.html"><img class="logo2" src="img/ungibalance lys.png" alt="logo af UNGiBALANCE"></a>
+            <!--Skift logo UNGiBALANCE-->
+            <ul>
+                <li><a href="#">Diagnoser</a></li>
+                <li><a href="#">Personlige fortællinger</a></li>
+                <li><a href="#">Om os</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <button id="bars">  <!--Knap der kan trykkes på (kan ikke linke, der skal bruges a tag)-->
+            <i class="fa-solid fa-bars"></i> 
+        </button>
+    </header>
+
+
+   <section class="kontaktlinje"> <!--Kontaktlinje med telefonnummer-->
+            <a href="#">RING NU på +45 1234 5678</a>
+        </section>
 
     <!--Kontaktformular / main -->
     <main class="kontaktform">
@@ -50,10 +76,24 @@
                 <input id="mail" type="radio" name="kontakt">
                 <label for="mail">E-mail</label>
             </fieldset>
+
+            <input type="submit" name="submit" value="Send besked">
             
         </form>
 
     </main>
+
+    <img class="vaerktoej-img" src="img/hjælpeværktøjer.png" alt="Hjælpeværktøjslinje">
+
+    <footer>
+        <img class="logo-footer" src="img/logo mørk.png" alt="Logo i footer">
+
+        <div class="footer-info">
+            <p><i class="fa-solid fa-map-pin"></i>Højbyvej 44, 2300 København</p>
+            <p><i class="fa-solid fa-phone"></i>+45 1234 5678</p>
+            <p><i class="fa-solid fa-envelope"></i>ungi@balance.dk</p>
+        </div>
+    </footer>
     
 </body>
 </html>
