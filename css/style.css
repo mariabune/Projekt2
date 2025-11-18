@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Stack Sans Headline", sans-serif;
+}
+
+/*Header*/
+.logo, .logo2{
+    height: 4em;
+    width: auto;
+}
+
+nav ul {
+list-style-type: none; /*fjerner bulletpoints*/
+padding: 0;
+gap: 1em;
+}
+
+nav li{ /*menupunkterne */
+    padding: 0.8em; /*mere plads imellem*/
+}
+
+nav ul li a{
+    color: #000000;
+    text-decoration: none; /*fjerner linje under teksten*/
+    font-size: 20px;
+    display: inline-block;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #a8d0db;
+    padding: 1em;
+    border-bottom: #2b4570 ;
+}
+
+nav ul li a:hover{
+    transform: scale(1.1);
+}
+
+/*Main*/
+
+.kontaktlinje{
+    background-color: #2b4570;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.kontaktlinje a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+.kontaktelinje a:hover{
+    transform: scale(1.1);
+}
+
+h1, h2{
+    font-size: 3em;
+    text-align: center;
+}
+
+h3{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+p{
+    margin: 0 2em 1.5 2em;
+    line-height: 1.6;
+}
+
+img{
+    width: 100%;
+}
+
+/*Velkommen sektion*/
+.velkommen {
+    padding: 20px;
+}
+
+.velkommen p{
+    margin-top: 20px;
+}
+
+/*Personlige fortællinger sektion*/
+.fortallinger {
+    padding: 20px;
+    background-color: #7180ac;
+}
+
+.fortallinger p{
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 20px; /*runder kanterne*/
+    padding: 20px; 
+}
+
+.card a {
+    display: inline-block;
+    background-color: #E49273;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.card a:hover{
+    transform: scale(1.1);
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+/*Fakta sektion*/
+.fakta {
+    padding: 20px;
+    border-bottom: 2px solid #2b4570;
+}
+
+.fakta a {
+    display: inline-block;
+    background-color: #E49273;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.fakta a:hover{
+    transform: scale(1.1);
+}
+
+.fakta p {
+    margin-top: 15px;
+}
+
+/*Footer*/
+footer{
+    background-color: #2b4570;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-footer{
+    height: 7em;
+    width: auto;
+}
+
+img.vaerktoej-img {
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.footer-info{
+    text-align: left;
+    color: #ffffff;
+}
+
