@@ -5,8 +5,19 @@
 }
 
 /*Header*/
-.logo, .logo2{
-    height: 4em;
+.begge-logo-header{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo {
+    height: 6em;
+    width: auto;
+    margin-right: 20px;
+}
+
+.logo2 {
+    height: 6em;
     width: auto;
 }
 
@@ -14,6 +25,11 @@ nav ul {
 list-style-type: none; /*fjerner bulletpoints*/
 padding: 0;
 gap: 1em;
+
+justify-content: center; /*her kan vi specificere hvor menuen skal være*/
+flex-direction: column;
+background-color: #E49273;
+width: 100%;
 }
 
 nav li{ /*menupunkterne */
@@ -37,6 +53,20 @@ header nav{
 
 nav ul li a:hover{
     transform: scale(1.1);
+}
+
+#bars{
+        display: block; 
+        background: none;
+        border: none;
+        font-size: 2rem;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+nav ul.show {
+    display: flex;
 }
 
 /*Main*/
@@ -76,7 +106,7 @@ p{
 img{
     width: 100%;
 }
-
+                                /*Forside*/
 /*Velkommen sektion*/
 .velkommen {
     padding: 20px;
@@ -116,7 +146,7 @@ img{
     text-decoration: none;
     color: black;
     font-weight: bold;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .card a:hover{
@@ -249,9 +279,21 @@ input[type=submit]:hover{ /*tilføjer hover på knappen*/
 padding: 20px;
 }
 
-.adhd-illu {
-    height: 10em;
+.adhd p {
+    padding: 10px;
+}
+
+.adhd-illu img {
+    height: 15em;
     width: auto;
+}
+
+.adhd-illu {
+    height: 15em;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .adhd-flex {
@@ -300,6 +342,7 @@ transform: scale(1.1);
 
 .symptomer{
     padding: 20;
+    margin-top: 40px;
 }
 
 .symptomer p {
@@ -311,31 +354,95 @@ footer{
     background-color: #2b4570;
     display: flex;
     justify-content: space-between;
+    padding: 20px;
 }
 
-.logo-footer{
-    height: 7em;
+.begge-logo-footer{
+    height: 5em;
     width: auto;
+    display: flex;
+    justify-content: flex-start;
 }
 
-img.vaerktoej-img {
-    width: 70%;
-    display: block;
-    margin: auto;
-    margin-top: 20px;
+.vaerktoej-img {
+width: 75%;
+display: flex;
+justify-content: center;
 }
+
 
 .footer-info{
     text-align: left;
     color: #ffffff;
 }
 
+main {
+    display: block;
+}
+
 /*media queries*/
-@media screen and (min-width: 600px){
-    .velkommen,
-    .fortallinger,
-    .fakta{
-        flex: 1;
-    } 
+@media screen and (min-width: 769px){
+    
+    #bars {
+        display: none;
+    }
+
+    .main-flex-container{
+        display: flex;
+        gap: 40px;
+    }
+    
+    .raad, .fortallinger, .fakta{
+        width: 30%;
+        align-items: flex-start;
+    }
+
+    .raad{
+        object-fit: contain;
+    }
+
+    .vaerktoej-img {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+    }
+
+    .vaerktoej-img img {
+        width: 400px;
+        height: auto;
+        object-fit: contain;
+    }
+    /*emne-side*/
+
+    .emne-flex-container {
+    display: flex;
+    gap: 40px;
+    }
+
+    .adhd-flex, .adhd-illu .indhold{
+    width: 30%;
+    }
+
+    .adhd-illu {
+    height: 20em;    
+    width: auto;
+    }
+
+    .hvaderadhd{
+    width: 100;
+    }
+
+    .symptomer-flex-container{
+        display: flex;
+        gap: 40px;
+    }
+
+    .symptomer, .symptomer-illu {
+        width: 50%;
+    }
+
+    .tele-illu {
+        height: 10em;
+    }
 }
     

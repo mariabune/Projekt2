@@ -15,10 +15,12 @@
 <body>
     <header>
         <nav>
-            <a href="forside.html"><img class="logo" src="img/logo.png" alt="logo af UNGiBALANCE"></a> <!--rundt logo-->
-            <a href="forside.html"><img class="logo2" src="img/ungibalance lys.png" alt="logo af UNGiBALANCE"></a>
-            <!--Skift logo UNGiBALANCE-->
+            <div class="begge-logo-header"><a href="forside.html"><img class="logo" src="img/logo.png" alt="logo af UNGiBALANCE"></a> <!--rundt logo-->
+                <a href="forside.html"><img class="logo2" src="img/ungibalance lys.png" alt="logo af UNGiBALANCE"></a>
+            </div>
+            
             <ul>
+                <li><a href="forside.html">Forside</a></li>
                 <li><a href="emne.html">Diagnoser</a></li>
                 <li><a href="#">Personlige fortællinger</a></li>
                 <li><a href="#">Om os</a></li>
@@ -42,9 +44,10 @@
             <p>Mental sundhed er noget mange døjer med. Siden her er både til dig der har en diagnose eller oplever symptomer, men også til dig som er pårørende. Eller måske er du bare nysgerrig.</p>
         </section>
 
-        <img class="raad" src="img/6 råd illu.png" alt="Illustration over 6 råd">
+        <div class="main-flex-container">
+            <img class="raad" src="img/6 råd illu.png" alt="Illustration over 6 råd" aria-describedby=""> <!--ARIA  (efter. css display none, visabily hidden )-->
 
-        <section class="fortallinger"> <!--Personlige fortællinger blå boks "fortallinger"-->
+            <section class="fortallinger"> <!--Personlige fortællinger blå boks "fortallinger"-->
             <h2>Personlige fortællinger</h2>
             <p>Du er ikke alene. Her fortæller anonyme unge om hvordan de lever med psykiske udfordringer</p>
 
@@ -61,7 +64,8 @@
                     <a href="#">Læs historien her</a>
                 </div>
             </div>
-        </section>
+            </section>
+        
 
         <section class="fakta"> <!--sidste sektion "fakta"-->
             <h2>FAKTA</h2>
@@ -71,12 +75,18 @@
             <p>“Unge med diagnoser som angst, depression, OCD, ADHD og autisme er mindre tilbøjelige til at starte og gennemføre en uddannelse.”</p>
             <a href="#">Læs mere fakta her</a>
         </section>
+    </div>
 
-        <img class="vaerktoej-img" src="img/hjælpeværktøjer.png" alt="Hjælpeværktøjslinje">
+        <div class="vaerktoej-img">
+            <img src="img/hjælpeværktøjer.png" alt="Hjælpeværktøjslinje">
+        </div>
     </main>
 
     <footer>
-        <img class="logo-footer" src="img/logo mørk.png" alt="Logo i footer">
+        <div class="begge-logo-footer">
+            <img class="logo-footer" src="img/logo mørk.png" alt="Logo i footer">
+            <img src="img/Ungibalance mørk.png" alt="Skrift logo i footer">
+        </div>
 
         <div class="footer-info">
             <p><i class="fa-solid fa-map-pin"></i>Højbyvej 44, 2300 København</p>
