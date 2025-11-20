@@ -21,11 +21,11 @@
     width: auto;
 }
 
-nav ul {
+.menu ul {
 list-style-type: none; /*fjerner bulletpoints*/
 padding: 0;
 gap: 1em;
-
+display: none;
 justify-content: center; /*her kan vi specificere hvor menuen skal være*/
 flex-direction: column;
 background-color: #E49273;
@@ -53,6 +53,7 @@ header nav{
 
 nav ul li a:hover{
     transform: scale(1.1);
+    text-decoration: underline;
 }
 
 #bars{
@@ -65,7 +66,7 @@ nav ul li a:hover{
         top: 20px;
     }
 
-nav ul.show {
+menu ul.show {
     display: flex;
 }
 
@@ -120,6 +121,7 @@ img{
 .fortallinger {
     padding: 20px;
     background-color: #7180ac;
+    border-radius: 20px;
 }
 
 .fortallinger p{
@@ -198,6 +200,7 @@ img{
     width: 70%;
     margin: 0 auto; /*Centrerer elementet på siden*/
     margin-top: 20px;
+    background-color: #a8d0db;
 }
 
 input[type=text], input[type=email], input[type=tel], select, textarea{
@@ -233,6 +236,7 @@ input[type=submit]{
 
 input[type=submit]:hover{ /*tilføjer hover på knappen*/
 	background-color: #fea584; /*vælger slightly lysere farve*/
+    text-decoration: underline;
 }
 
                                               /*Emneside*/
@@ -387,6 +391,13 @@ main {
         display: none;
     }
 
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        background: none;
+        justify-content: right;
+    }
+
     .main-flex-container{
         display: flex;
         gap: 40px;
@@ -437,8 +448,12 @@ main {
         gap: 40px;
     }
 
-    .symptomer, .symptomer-illu {
-        width: 50%;
+    .symptomer {
+        width: 70%;
+    }
+
+    .symptomer-illu {
+        width: 30%;
     }
 
     .tele-illu {

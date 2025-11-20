@@ -15,21 +15,27 @@
 <body>
     <header>
         <nav>
-            <a href="forside.html"><img class="logo" src="img/logo.png" alt="logo af UNGiBALANCE"></a> <!--rundt logo-->
-            <a href="forside.html"><img class="logo2" src="img/ungibalance lys.png" alt="logo af UNGiBALANCE"></a>
-            <!--Skift logo UNGiBALANCE-->
-            <ul>
-                <li><a href="forside.html">Forside</a></li>
-                <li><a href="emne.html">Diagnoser</a></li>
-                <li><a href="#">Personlige fortællinger</a></li>
-                <li><a href="#">Om os</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
+            <div class="begge-logo-header">
+                <a href="forside.html"><img class="logo" src="img/logo.png" alt="logo af UNGiBALANCE"></a> <!--rundt logo-->
+                <a href="forside.html"><img class="logo2" src="img/ungibalance lys.png" alt="logo af UNGiBALANCE"></a>
+            </div>
+
+            <button id="bars">  <!--Knap der kan trykkes på (kan ikke linke, der skal bruges a tag)-->
+            <i class="fa-solid fa-bars"></i> 
+            </button>
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="forside.html">Forside</a></li>
+                    <li><a href="emne.html">Diagnoser</a></li>
+                    <li><a href="#">Personlige fortællinger</a></li>
+                    <li><a href="#">Om os</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
         </nav>
 
-        <button id="bars">  <!--Knap der kan trykkes på (kan ikke linke, der skal bruges a tag)-->
-            <i class="fa-solid fa-bars"></i> 
-        </button>
+        
     </header>
 
 
@@ -86,7 +92,10 @@
 
     </main>
 
-    <img class="vaerktoej-img" src="img/hjælpeværktøjer.png" alt="Hjælpeværktøjslinje">
+    <div class="vaerktoej-img">
+            <img src="img/hjælpeværktøjer.png" alt="Hjælpeværktøjslinje">
+        </div>
+    </main>
 
     <footer>
         <div class="begge-logo-footer">
