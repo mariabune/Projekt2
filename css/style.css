@@ -22,26 +22,17 @@
 }
 
 .menu ul {
+display: none;
 list-style-type: none; /*fjerner bulletpoints*/
 padding: 0;
 gap: 1em;
-display: none;
 justify-content: center; /*her kan vi specificere hvor menuen skal være*/
 flex-direction: column;
 background-color: #E49273;
 width: 100%;
 }
 
-nav li{ /*menupunkterne */
-    padding: 0.8em; /*mere plads imellem*/
-}
-
-nav ul li a{
-    color: #000000;
-    text-decoration: none; /*fjerner linje under teksten*/
-    font-size: 20px;
-    display: inline-block;
-}
+/*Her var nav li og nav ul li a*/
 
 header nav{
     display: flex;
@@ -57,17 +48,70 @@ nav ul li a:hover{
 }
 
 #bars{
-        display: block; 
-        background: none;
-        border: none;
-        font-size: 2rem;
-        position: absolute;
-        right: 20px;
-        top: 20px;
+    display: block; 
+    background: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 2rem;
+    position: absolute;
+    right: 20px;
+    top: 20px;
     }
 
-menu ul.show {
+#search{
+    background: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 2rem;
+    position: absolute;
+    right: 80px;
+    top: 20px;
+}
+
+#lang{
+    background: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 2rem;
+    position: absolute;
+    right: 140px;
+    top: 20px;
+}
+
+#search:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#lang:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.menu{
+    position: relative;
+}
+
+ .menu ul.show { /* før var det display: flex; + flex-direction: column;*/
     display: flex;
+    flex-direction: column;   /* viser punkterne i kolonne */
+    position: absolute;       
+    top: 100%;                
+    left: 0;
+    width: 100%;              
+    background-color: #E49273; 
+    padding: 1em 0; 
+}
+
+.menu li {
+    padding: 0.8em;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: inline-block;
 }
 
 /*Main*/
@@ -80,7 +124,7 @@ menu ul.show {
 }
 
 .kontaktlinje a{
-    text-decoration: none;
+    text-decoration: underline;
     color: white;
     display: inline-block;
 }
@@ -186,6 +230,10 @@ img{
 }
 
                                                 /*Kontaktform*/
+.kontakt-top {
+    padding: 20px;
+    line-height: 1.8;
+}
 .tele-illu {
     height: 5em;
     width: auto;
@@ -300,6 +348,12 @@ padding: 20px;
     margin-bottom: 30px;
 }
 
+figure {
+    text-align: left;
+    margin-left: 20px;
+    padding: 20px;
+}
+
 .adhd-flex {
     display: flex;
     align-items: center;
@@ -326,6 +380,8 @@ padding: 20px;
 
 .nav-indhold ul li a {
     color: #ffffff;
+    text-decoration: none;
+    line-height: 1.8;
 }
 
 .nav-indhold ul li a:hover {
@@ -396,11 +452,13 @@ main {
         flex-direction: row;
         background: none;
         justify-content: right;
+        margin-top: 60px;
     }
 
     .main-flex-container{
         display: flex;
         gap: 40px;
+        align-items: flex-start;
     }
     
     .raad, .fortallinger, .fakta{
